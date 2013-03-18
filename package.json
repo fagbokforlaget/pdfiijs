@@ -9,7 +9,7 @@
   "dependencies": {
     "pdfinfojs": ">=0.3.4",
     "pdftotextjs": ">=0.3.1",
-    "textiijs": ">=0.1.0"
+    "textiijs": ">=0.1.1"
   },
   "devDependencies": {
     "mocha": ">=1.8.2",
