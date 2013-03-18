@@ -7,8 +7,9 @@
     "test": "make test"
   },
   "dependencies": {
-    "pdfinfojs": ">=0.3.3",
-    "pdftotextjs": ">=0.3.0"
+    "pdfinfojs": ">=0.3.4",
+    "pdftotextjs": ">=0.3.1",
+    "textiijs": ">=0.1.0"
   },
   "devDependencies": {
     "mocha": ">=1.8.2",
