@@ -1,6 +1,6 @@
-var pdfii = require('../index');
+var pdfii = require('pdfiijs');
 
-var pii = new pdfii('./sample.pdf', null, function(err, data) {
+var pii = new pdfii('./sample.pdf', function(err, data) {
   if(err) {
     return console.log("Error: " + err);
   }
