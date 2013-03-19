@@ -1,6 +1,6 @@
 {
   "name": "pdfiijs",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "PDF inverted index creator.",
   "main": "index.js",
   "scripts": {
