@@ -1,3 +1,5 @@
+require('./helpers/obj_equals');
+
 var assert = require("assert"),
     pdfii = require('../index'),
     sample_pdf = './test/pdf/sample.pdf'
@@ -7,7 +9,8 @@ describe('pdfii', function() {
   describe('#get()', function() {
 
     it('should create reverted index with sections', function(done) {
-      var pii = new pdfii(sample_pdf, function(err, data) {
+      var pii = new pdfii(sample_pdf);
+      pii.get(function(err, data) {
         if (err) {
           throw err;
         }
@@ -30,7 +33,6 @@ describe('pdfii', function() {
         assert(expected.equals(data));
         done();
       });
-      pii.get();
     });
 
   });

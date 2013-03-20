@@ -1,10 +1,11 @@
-var pdfii = require('pdfiijs');
+// var pdfii = require('pdfiijs');
+var pdfii = require('../index');
 
-var pii = new pdfii('./sample.pdf', function(err, data) {
+var pii = new pdfii('./sample.pdf');
+
+pii.get(function(err, data) {
   if(err) {
     return console.log("Error: " + err);
   }
   console.log(data);
 });
-
-pii.get();
